@@ -1,5 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h> // Put this with the other includes at the top of your overlay
 #include "t_rex-layouts.dtsi"
+#include <dt-bindings/led/led.h>
 
 / {
     kscan0: kscan0 {
@@ -32,6 +33,8 @@
     };
 };
 
+//  RGB Pin <&pro_micro 18 GPIO_ACTIVE_HIGH>
+
 / {
     default_transform: keymap_transform0 {
         compatible = "zmk,matrix-transform";
@@ -47,11 +50,11 @@
     };
 };
 
-
 / {
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &layout_ortho_5x12_all1u;
-        // Other chosen items
+        
+        zmk,underglow = &led_strip;
     };
 };
