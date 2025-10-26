@@ -1,10 +1,8 @@
 #include <physical_layouts.dtsi>
 #include <layouts/common/ortho_5x12/all1u.dtsi>
 
-/ {
-    physical_layout0: physical_layout_0 {
-        compatible = "zmk,physical-layout";
-        display-name = "Default Layout";
-    };
+&layout_ortho_5x12_all1u {
+    transform = <&default_transform>;
+    kscan = <&kscan0>;
 };
 
