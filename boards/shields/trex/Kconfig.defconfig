@@ -1,0 +1,7 @@
+if SHIELD_T_REX
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "T-Rex"
+
+endif
