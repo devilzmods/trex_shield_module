@@ -47,14 +47,11 @@
     };
 };
 
-&physical_layout0 {
-    transform = <&default_transform>; // Label of the matrix transform this layout uses
-};
 
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &physical_layout0;
+        zmk,physical-layout = &layout_ortho_5x12_all1u;
         // Other chosen items
     };
 };
