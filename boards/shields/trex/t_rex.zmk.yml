@@ -1,0 +1,10 @@
+file_format: "1"
+id: t_rex
+name: T-Rex
+type: shield
+url: https://github.com/SylivanKenobi/t-rex
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - studio
