@@ -1,8 +1,0 @@
-#include <physical_layouts.dtsi>
-#include <layouts/common/ortho_5x12/all1u.dtsi>
-
-// Assigning suitable kscan and matrix transforms
-&all1u {
-    transform = <&default_transform>;
-    kscan = <&kscan0>;
-};
