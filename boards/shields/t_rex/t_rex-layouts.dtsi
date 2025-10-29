@@ -5,4 +5,3 @@
     transform = <&default_transform>;
     kscan = <&kscan0>;
 };
-
